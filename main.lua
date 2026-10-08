@@ -144,9 +144,9 @@ function love.draw()
     love.graphics.draw(Drinksmall, SpawnX, SpawnY)
   end
 
-  love.graphics.print("SCORE: " .. BallsClicked, 20, 20, 0, 2, 2) -- Scale by 2x so it's easy to read
+  love.graphics.print("SCORE: " .. BeachballsClicked, 20, 20, 0, 2, 2)
 
-    if BallsClicked == 100 then
+    if BeachballsClicked == 100 then
         love.event.quit()
     end
 
