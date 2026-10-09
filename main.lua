@@ -26,8 +26,8 @@ function love.load()
             0 - math.random(Beachball:getHeight(), Beachball:getHeight() * 2)}
 
 
-    --Balls Clicked Counter
-  BallsClicked = 0
+    --BeachBalls Clicked Counter
+  BeachBallsClicked = 0
 
 
     -- Speed variables       
@@ -144,9 +144,9 @@ function love.draw()
     love.graphics.draw(Drinksmall, SpawnX, SpawnY)
   end
 
-  love.graphics.print("SCORE: " .. BeachballsClicked, 20, 20, 0, 2, 2)
+  love.graphics.print("SCORE: " .. BeachBallsClicked, 20, 20, 0, 2, 2)
 
-    if BeachballsClicked == 100 then
+    if BeachBallsClicked == 100 then
         love.event.quit()
     end
 
