@@ -69,7 +69,7 @@ function love.mousepressed(x, y, button, istouch)
 
         --reset its y value (go back to the top)
         starty[i] = math.random(Beachball:getHeight(), Beachball:getHeight() * 2) * -1
-        BallsClicked = BallsClicked + 1
+        BeachBallsClicked = BeachBallsClicked + 1
       end
 
     end
